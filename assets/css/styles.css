@@ -259,9 +259,9 @@ img {
 .hero {
     background-image: url(../img/hero-bg.jpg);
     background-size: cover;
-    background-position: top center;
+    background-position: center;
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     z-index: 1;
 }
@@ -279,12 +279,11 @@ img {
 }
 
 .hero__container {
-    min-height: 100vh;
-    width: 100vw;
+    height: 100%;
     display: flex;
+    flex-direction: column;
     align-items: left;
     justify-content: center;
-    flex-direction: column;
 }
 
 .hero__title {
