@@ -482,7 +482,7 @@ img {
   stroke: var(--brown-first-color);
   stroke-width: 10;
   stroke-linecap: round;
-  transition: all .5s;
+  transition: all .2s;
   transform: rotate(0deg);
   will-change: transform, opacity;
   transform-origin: center;

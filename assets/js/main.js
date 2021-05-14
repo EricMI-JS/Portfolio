@@ -3,7 +3,7 @@ import hamburgerMenu from "./hamburger_menu.js";
 const d = document;
 
 d.addEventListener('DOMContentLoaded', e => {    
-    hamburgerMenu(".menu-icon", ".nav__menu", ".menu__hamburger");
+    hamburgerMenu(".menu-icon", ".nav__menu", ".menu__hamburger", ".nav__link");
 })
 
 
