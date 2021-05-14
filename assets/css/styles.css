@@ -14,9 +14,9 @@
   /*===== COLORS =====*/
   --black-color: #000;
   --light-color: #e7dfdd;
-  --brown-first-color: #63270b;
-  --brown-first-color-transparent: #63270bda;
-  --brown-second-color: #311305;
+  --brown-first-color: #033453;
+  --brown-first-color-transparent: 27C3F3;
+  --brown-second-color: #057091;
   --title-color: rgb(36, 36, 36);
   --text-color: rgb(63, 62, 62);
   --text-second-color: #888888;
@@ -207,7 +207,7 @@ img {
 
 .nav__social {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-bottom: var(--mb-4);
 }
 
@@ -287,15 +287,15 @@ img {
   background-image: url(../img/hero-wall-1.jpg);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   position: relative;
   width: 100%;
   height: 100vh;
-  z-index: 1;
   filter: brightness(103%);
 }
 
 .hero__container {
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -396,7 +396,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(148, 84, 32, 0.7);
+  background-color: rgba(32, 148, 148, 0.7);
   border-radius: 0.5rem;
   transition: 0.3s;
 }
@@ -520,7 +520,7 @@ img {
   right: calc(5px + 1vw);
   width: 2.6rem;
   height: 2.6rem;
-  border-radius: 50%;
+  border-radius: 8px;
   font-size: 2rem;
   font-weight: var(--font-medium);
   background-color: var(--brown-first-color);
