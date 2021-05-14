@@ -331,7 +331,12 @@ img {
   width: fit-content;
   font-size: 1.2rem;
   position: relative;
-  color: var(--brown-first-color);
+  color: var(--brown-second-color);
+}
+
+.hero__typed {
+    color: var(--brown-first-color);
+    border-bottom: 1px solid var(--brown-first-color);
 }
 
 /*===== ABOUT SECTION =====*/
