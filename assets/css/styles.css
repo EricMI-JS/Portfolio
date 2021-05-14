@@ -186,7 +186,7 @@ img {
   position: fixed;
   top: 0;
   left: -100%;
-  width: 90%;
+  width: 85%;
   height: 100vh;
   padding: 3rem;
   background-color: var(--first-color-lighten);
@@ -233,15 +233,6 @@ img {
   margin-right: none;
 }
 
-.nav__close {
-  position: absolute;
-  top: 10px;
-  right: 1.5rem;
-  font-size: 2rem;
-  color: var(--brown-first-color);
-  cursor: pointer;
-}
-
 .nav__item {
   margin-bottom: var(--mb-3);
 }
@@ -269,14 +260,6 @@ img {
 .nav__link:hover {
   color: var(--first-color);
   border-bottom: 1px solid var(--brown-first-color);
-}
-
-.nav__toggle {
-  position: absolute;
-  top: 1rem;
-  color: var(--brown-first-color);
-  font-size: 2rem;
-  cursor: pointer;
 }
 
 .copyright {
@@ -482,4 +465,47 @@ img {
 .footer__author {
   color: var(--brown-first-color);
   font-weight: var(--font-bold);
+}
+
+/*===== HAMBURGER =====*/
+.menu__hamburger {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 1rem;
+  right: .5rem;
+  z-index: var(--z-fixed);
+}
+
+.menu__hamburger path {
+  stroke: var(--brown-first-color);
+  stroke-width: 10;
+  stroke-linecap: round;
+  transition: all .5s;
+  transform: rotate(0deg);
+  will-change: transform, opacity;
+  transform-origin: center;
+}
+
+.menu-link:hover path,
+.menu-link:focus path,
+.menu-link:active path {
+  stroke: cornflowerblue
+}
+
+.menu__hamburger.active path:nth-child(1) {
+  opacity: 0;
+}
+
+.menu__hamburger.active path:nth-child(4) {
+  opacity: 0;
+}
+
+.menu__hamburger.active path:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.menu__hamburger.active path:nth-child(3) {
+  transform: rotate(-45deg);
 }
