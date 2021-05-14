@@ -15,6 +15,7 @@
   --black-color: #000;
   --light-color: #e7dfdd;
   --brown-first-color: #63270b;
+  --brown-first-color-transparent: #63270bda;
   --brown-second-color: #311305;
   --title-color: rgb(36, 36, 36);
   --text-color: rgb(63, 62, 62);
@@ -473,8 +474,8 @@ img {
   width: 40px;
   height: 40px;
   position: fixed;
-  bottom: 1rem;
-  right: .5rem;
+  bottom: 1vh;
+  right: calc(.5rem + 1vw);
   z-index: var(--z-fixed);
 }
 
@@ -508,4 +509,38 @@ img {
 
 .menu__hamburger.active path:nth-child(3) {
   transform: rotate(-45deg);
+}
+
+
+/*===== SCROLL TOP BTN =====*/
+.scroll__top {
+  position: fixed;
+  z-index: var(--z-fixed);
+  bottom: calc(3rem + 1vh);
+  right: calc(5px + 1vw);
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  font-weight: var(--font-medium);
+  background-color: var(--brown-first-color);
+  color: var(--light-color);
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  transition: all 0.3s ease-out;
+  padding: 0 0 .4rem 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll__top:hover {
+  background-color: var(--brown-second-color);
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
 }
