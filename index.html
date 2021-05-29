@@ -16,7 +16,7 @@
       href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
     />
   </head>
-  <body>
+  <body data-dark>
     <!--===== HEADER =====-->
     <header class="l-header">
 
@@ -24,7 +24,9 @@
 
         <div class="nav__menu" id="nav-menu">
 
-          <h1><a href="index.html" class="nav__title">Eric Morales</a></h1>
+          <li><i class="bx bx-moon change-theme" id="theme-button"></i></li>
+
+          <h1><a href="index.html" class="nav__title" data-neon>Eric Morales</a></h1>
 
           <ul class="nav__social">
            
@@ -71,7 +73,7 @@
               >
             </li>
             <li class="nav__item">
-              <a href="#contact" class="nav__link"
+              <a href="mailto:ericdaniel3103@gmail.com" class="nav__link"
                 ><i class="far fa-envelope"></i>Contactme</a
               >
             </li>
@@ -92,21 +94,22 @@
     </header>
 
     <main class="l-main">
+      
       <!--===== HERO SECTION =====-->
-      <section class="hero">
+      <section class="hero-light">
         <div class="hero__container bd-grid">
-          <h1 class="hero__title">Eric Morales</h1>
+          <h1 class="hero__title" data-hero-neon>Eric Morales</h1>
           <p class="hero__description">
             I'm <span class="hero__typed typed">FrontEnd Developer</span>
           </p>
-          <a href="#about" class="button button__light">More</a>
+          <a href="#about" class="button" data-button-neon data-dark>More about me</a>
         </div>
       </section>
 
       <!--===== ABOUT SECTION =====-->
       <section class="about section" id="about">
         <span class="section-subtitle">Who Am I?</span>
-        <h2 class="section-title">About Me</h2>
+        <h2 class="section-title" data-neon>About Me</h2>
 
         <div class="about__container bd-grid">
           <div class="about__data">
@@ -122,7 +125,7 @@
       <!--===== SKILLS SECTION =====-->
       <section class="skills section" id="skills">
         <span class="section-subtitle">Why Choose Me</span>
-        <h2 class="section-title">Technolgies</h2>
+        <h2 class="section-title" data-neon>Technolgies</h2>
 
         <div class="skills__container bd-grid">
           <div class="skills__data">
@@ -155,11 +158,11 @@
       <!--===== WORKS =====-->
       <section class="works section" id="works">
         <span class="section-subtitle">My portfolio</span>
-        <h2 class="section-title">Recent Works</h2>
+        <h2 class="section-title" data-neon>Recent Works</h2>
 
         <div class="works__container bd-grid">
           <div class="works__img">
-            <img src="assets/img/work1.PNG" alt="" />
+            <img src="assets/img/work1-min.PNG" alt="" />
             <div class="works__data">
               <a href="https://ericmi-js.github.io/CotizadorSeguros/" target="_blank" class="works__link"><i class="bx bx-link-alt"></i></a>
               <span class="works__title">Cotizador de Seguros</span>
@@ -167,7 +170,7 @@
           </div>
 
           <div class="works__img">
-            <img src="assets/img/work2.PNG" alt="" />
+            <img src="assets/img/work2-min.PNG" alt="" />
             <div class="works__data">
               <a href="https://ericmi-js.github.io/GastoSemanal/" target="_blank" class="works__link"><i class="bx bx-link-alt"></i></a>
               <span class="works__title">Administrador de Gastos</span>
@@ -175,7 +178,7 @@
           </div>
 
           <div class="works__img">
-            <img src="assets/img/work3.PNG" alt="" />
+            <img src="assets/img/work3-min.PNG" alt="" />
             <div class="works__data">
               <a href="https://ericmi-js.github.io/AdministradorCitas/" target="_blank" class="works__link"><i class="bx bx-link-alt"></i></a>
               <span class="works__title">Administrador de Citas</span>
@@ -183,7 +186,7 @@
           </div>
 
           <div class="works__img">
-            <img src="assets/img/work4.PNG" alt="" />
+            <img src="assets/img/work4-min.PNG" alt="" />
             <div class="works__data">
               <a href="https://ericmi-js.github.io/CRMImdexdedDB/" target="_blank" class="works__link"><i class="bx bx-link-alt"></i></a>
               <span class="works__title">CRM con IndexedDB</span>
@@ -191,7 +194,7 @@
           </div>
 
           <div class="works__img">
-            <img src="assets/img/work5.PNG" alt="" />
+            <img src="assets/img/work5-min.PNG" alt="" />
             <div class="works__data">
               <a href="https://ericmi-js.github.io/APIClimaFetchAPI/" target="_blank" class="works__link"><i class="bx bx-link-alt"></i></a>
               <span class="works__title">API Buscador de Clima</span>
@@ -199,7 +202,7 @@
           </div>
 
           <div class="works__img">
-            <img src="assets/img/work6.PNG" alt="" />
+            <img src="assets/img/work6-min.PNG" alt="" />
             <div class="works__data">
               <a href="https://ericmi-js.github.io/CotizadorCriptomonedas/" target="_blank" class="works__link"><i class="bx bx-link-alt"></i></a>
               <span class="works__title">Cotizador de Criptomonedas</span>
@@ -212,7 +215,7 @@
     <!--===== FOOTER =====-->
     <footer class="footer">
       <div class="footer__container bd-grid">
-        <h1 class="footer__title">EricMI</h1>
+        <h1 class="footer__title" data-neon>EricMI</h1>
         <p class="footer__description">
           I am EricMI and this is my personal website.
         </p>
@@ -243,7 +246,7 @@
       </a>
 
     <!--===== SCROLL TOP BTN =====-->
-    <button class="scroll__top hidden">
+    <button class="scroll__top hidden" data-button-neon>
       &#11014;
     </button>
 
