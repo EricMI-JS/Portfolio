@@ -670,6 +670,10 @@ img {
   align-items: center;
 }
 
+.scroll__top i {
+  margin-top: 7px;
+}
+
 .scroll__top:hover {
   background-color: var(--stuffed-dark);
   color: var(--stuffed);
