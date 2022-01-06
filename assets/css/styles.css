@@ -20,7 +20,7 @@
   --stuffed: #e6f1f8;
   --stuffed-dark: #001e2f;
   --white-color: #fff;
-  --brand-color: #03bcf4;
+  --brand-color: #001e2f;
   --body-color: #fbfefd;
   --hover-color: #e6f1f8;
   --bg-skills: #f0f0f0;
@@ -349,7 +349,7 @@ img {
 }
 
 .me {
-  color: var(--brand-color);
+  color: var(--first-color-lighten);
   font-weight: var(--font-semi-bold);
 }
 
@@ -457,32 +457,40 @@ img {
   font-size: 1.2rem;
 }
 
-.fa-html5:hover {
+.fa-html5 {
   color: #e96228;
 }
 
-.fa-css3-alt:hover {
+.fa-css3-alt {
   color: #31a4d5;
 }
 
-.fa-js:hover {
+.fa-js {
   color: #e9d11f;
 }
 
-.fa-sass:hover {
+.fa-sass {
   color: #bf608f;
 }
 
-.fa-git-alt:hover {
+.fa-gulp {
+  color: #e84c50;
+}
+
+.fa-git-alt {
   color: #e84e31;
 }
 
-.fa-bootstrap:hover {
+.fa-bootstrap {
   color: #5a3779;
 }
 
-.fa-react:hover {
+.fa-react {
   color: #61dafb;
+}
+
+.fa-php {
+  color: #687cad;
 }
 
 /*===== SKILLS SECTION =====*/
@@ -581,7 +589,7 @@ img {
 }
 
 .footer__author {
-  color: var(--brand-color);
+  color: var(--first-color-lighten);
   font-weight: var(--font-bold);
 }
 
