@@ -349,7 +349,7 @@ img {
 }
 
 .me {
-  color: var(--first-color-lighten);
+  color: var(--text-color);
   font-weight: var(--font-semi-bold);
 }
 
